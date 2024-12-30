@@ -1,0 +1,51 @@
+.guideBannerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.guideBannerCard__iconCont {
+  background-color: var(--blue-color);
+  height: 148px;
+  border-radius: 50%;
+  width: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.guideBannerCard__icon {
+  color: var(--primary-color);
+  font-size: 3.5rem;
+}
+
+.guideBannerCard__iconCont > span {
+  position: absolute;
+  bottom: -10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--orange-color);
+  font-size: var(--font-24);
+  font-weight: 500;
+}
+
+.guideBannerCard__textCont {
+  text-align: center;
+}
+
+.guideBannerCard__desc {
+  font-size: var(--font-16);
+  color: var(--white-dull-color);
+}
+.guideBannerCard__title {
+  color: var(--blue-color);
+  line-height: 1.6;
+  font-size: var(--font-24);
+}

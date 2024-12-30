@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #51505d;
+  --blue-color: #00bcd5;
+  --blue-active-color: #076f7c;
+  --orange-color: #ff5a60;
+  --orange-active-color: #e53a41;
+  --gold-color: #d2b17c;
+  --white-dull-color: #72727d;
+  --primary-dull-color: #f1f1f2;
+  --black-color: #000000;
+  --font32: 2rem;
+  --font-16: 1rem;
+  --font-24: 1.5rem;
+  --font-14: 0.875rem;
+  --font-18: 1.125rem;
+}

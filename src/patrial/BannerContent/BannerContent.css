@@ -1,0 +1,97 @@
+.bannerContent {
+  font-size: var(--font-24);
+  color: var(--primary-color);
+  text-align: center;
+  text-shadow: 1px 1px 1px #1f2a1f;
+  font-weight: 400;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.bannerContent__main {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-family: 'Roboto';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 50px;
+  gap: 24px;
+  margin-top: 25px;
+}
+
+.bannerContent__main > p {
+  font-size: var(--font-16);
+  font-weight: 500;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.bannerContent__labelCont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.bannerContent__main > .bannerContent__labelCont > label {
+  border: 2px solid var(--primary-color);
+  font-size: var(--font-16);
+  width: 196px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  flex-grow: 1;
+  opacity: 0.3;
+}
+
+.bannerContent__main > .bannerContent__labelCont > label > input {
+  margin-left: 10px;
+}
+
+.bannerContent__main > .bannerContent__labelCont > label > span {
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.bannerContent__main > button {
+  flex-grow: 1;
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--primary-color);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: var(--font-18);
+  width: 270px;
+  height: 40px;
+  border-radius: 0.25rem;
+  transition: all 0.5s linear;
+  max-width: 80%;
+}
+.bannerContent__main > button :hover {
+  background-color: red;
+}
+
+label:has(.banner__radio:checked) {
+  opacity: 1;
+}
+
+@media screen and (min-width: 750px) {
+  .bannerContent {
+    font-size: var(--font32);
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .bannerContent__main > button {
+    width: 270px;
+  }
+}

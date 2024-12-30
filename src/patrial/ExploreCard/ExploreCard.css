@@ -1,0 +1,54 @@
+.explore__title {
+  font-size: var(--font32);
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: var(--secondary-color);
+}
+
+.exploreCard {
+  padding: 30px;
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.exploreCard__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exploreCard__heading {
+  color: var(--blue-color);
+  font-size: var(--font-18);
+  font-weight: 600;
+  line-height: 21px;
+  cursor: pointer;
+}
+.exploreCard__headingIcon {
+  color: var(--white-dull-color);
+}
+
+.exploreCard__content {
+  padding-top: 25px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.exploreCard__contentActive {
+  display: flex;
+}
+
+.exploreCard__content > p {
+  font-size: var(--font-18);
+  color: var(--white-dull-color);
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.exploreCard__extraLink {
+  color: var(--blue-color) !important;
+  font-size: var(--font-16) !important;
+  font-weight: 400;
+}

@@ -1,0 +1,58 @@
+.happyStories {
+  background-color: var(--primary-color);
+  padding: 0 8% 5% 8%;
+  font-family: 'Roboto';
+}
+
+.happyStories__cardCont {
+  scroll-behavior: smooth;
+}
+
+.happyStories__arrowCont {
+  position: relative;
+}
+
+.happyStories__cardContArrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.happyStories__cardContArrowItemCont {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(39, 39, 38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10 !important;
+}
+
+.happyStories__cardContArrowItem {
+  font-size: var(--font-18);
+  color: var(--primary-color);
+}
+
+.happyStories__cont > h3 {
+  margin-top: 50px;
+}
+
+.happyStories__cardCont {
+  display: grid;
+  grid-template-columns: repeat(auto-fill);
+  grid-auto-flow: column;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  gap: 25px;
+}
+
+@media screen and (min-width: 750px) {
+  .happyStories {
+    padding: 0 15% 5% 15%;
+  }
+}

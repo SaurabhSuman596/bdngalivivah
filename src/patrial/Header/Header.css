@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: var(--font32);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: none;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+
+button > span {
+  font-family: 'Roboto';
+  font-size: var(--font-16);
+}
+
+.help__button {
+  display: none;
+}
+
+@media screen and (min-width: 560px) {
+  .help__button {
+    display: flex;
+  }
+}

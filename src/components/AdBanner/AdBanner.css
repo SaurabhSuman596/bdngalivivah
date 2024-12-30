@@ -1,0 +1,109 @@
+.adBanner {
+  background-color: var(--primary-dull-color);
+  padding: 5% 8%;
+  font-family: 'Roboto';
+}
+.adBanner__cont {
+  background-color: #201530;
+  border-radius: 20px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 20px 12px;
+  display: flex;
+  gap: 25px;
+  align-items: top;
+  flex-direction: column;
+  text-align: center;
+}
+
+.adBanner__cont > .adBanner__desc > h1 {
+  color: var(--gold-color);
+  font-family: 'Roboto Serif';
+  line-height: 1.5;
+  letter-spacing: 0.0938em;
+  font-size: var(--font-24);
+}
+
+.adBanner__desc {
+  border-right: none;
+}
+
+.adBanner__centerLine {
+  width: 2px;
+  height: 100%;
+  background-color: var(--gold-color);
+}
+
+.adBanner__descBottom {
+  color: var(--primary-color);
+  font-size: var(--font-16);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  word-break: keep-all;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.adBanner__descBanner {
+  padding: 10px 25px;
+}
+
+.adBanner__descBanner > img {
+  width: 90%;
+}
+
+.adBanner__descBanner > button {
+  width: 100%;
+  border: none;
+  background-color: var(--gold-color);
+  height: 50px;
+  border-radius: 4px;
+  margin-top: 25px;
+  cursor: pointer;
+  color: var(--black-color);
+  font-family: 'Roboto-Serif';
+  font-size: var(--font-18);
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 750px) {
+  .adBanner {
+    padding: 5% 15%;
+  }
+  .adBanner__cont {
+    padding: 20px 40px;
+  }
+
+  .adBanner__cont > h1 {
+    font-size: var(--font32);
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .adBanner__cont {
+    flex-direction: row;
+  }
+  .adBanner__descBanner {
+    width: 40%;
+  }
+  .adBanner__desc {
+    border-right: 2px solid var(--gold-color);
+    text-align: left;
+  }
+
+  .adBanner__descBottom {
+    justify-content: start;
+  }
+  .adBanner__cont {
+    gap: 0;
+  }
+}

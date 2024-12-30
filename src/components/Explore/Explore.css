@@ -1,0 +1,25 @@
+.explore {
+  background-color: var(--primary-dull-color);
+  padding: 5% 5%;
+  font-family: 'Roboto';
+}
+
+.explore__cardCont {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .explore__cardCont {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .explore {
+    padding: 5% 15%;
+  }
+}
